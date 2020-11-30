@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/logo.png" type="image/png">
+	<link rel="stylesheet" href="css/w3.css">
+</head>
+<body>
+	<div class="w3-head">
+		<h1>FEEDBACK</h1>
+	</div>
+	<div class="w3-bar w3-light-grey">
+		<a href="index.html" class="w3-bar-item w3-button">Home</a>
+		<a href="attribute.html" class="w3-bar-item w3-button">Attribute</a>
+		<a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+		<a href="about.html" class="w3-bar-item w3-button">About</a>
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">More</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+				<a href="feedback.html" class="w3-bar-item w3-button active">Feedback</a>
+			</div>
+		</div>
+		<div class="search-container">
+			<form action="https://google.com/search" method="GET">
+				<input type="text" name="q" placeholder="Google Search..">
+				<button type="submit" value="Google Search">
+					<img src="img/search.png" style="width: 16px">
+				</button>
+			</form>
+		</div>
+		<div class="darkmode">
+		<button onclick="myFunction()">
+			<img src="img/dark.png" style="width: 16px">
+		</button>			
+		</div>
+	</div>
+	<div class="w3-container">
+		<p>Please give some feedback about this website to fix and improve user experience. There are always a room for improvement</p>
+		<div class="w3-card-4">
+			<div class="w3-container w3-darkcyan">
+				<h2>Feedback Form</h2>
+			</div>
+			<form class="w3-container" method="post" action="mailto:muzaffarikhwan@gmail.com@gmail.com">
+				<p>
+					<label>Name</label>
+					<input class="w3-input w3-border" name="Name" type="text">
+				</p>
+				<p>
+					<label>Age</label>
+					<input class="w3-input w3-border" name="Age" type="number" min="10" max="99">
+				</p>
+				<p>
+					<input class="w3-radio" type="radio" name="gender" value="male" checked>
+					<label>Male</label>
+					<input class="w3-radio" type="radio" name="gender" value="female">
+					<label>Female</label></p>
+  				<p>
+				<p>     
+					<input class="w3-input" name="Comment" type="text">
+					<label>Comment</label>
+				</p>
+				<p>     
+					<input class="w3-input" name="Suggestion" type="text">
+					<label>Suggestion</label>
+				</p>
+				<button class="w3-btn w3-darkcyan" type="submit" value="submit">Submit</button>
+				<p></p>
+			</form>
+		</div>
+	</div>
+	<div style="margin-top: 100px"></div>
+	<div class="w3-foot">
+		<footer style="text-align: center">
+			Copyright &copy; 2020 Ikhwan Muzaffar
+		</footer>
+	</div>
+	<script>
+		function myFunction() {
+   			var element = document.body;
+   			element.classList.toggle("dark-mode");
+		}
+	</script>
+</body>
+</html>
